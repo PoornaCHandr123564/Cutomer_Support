@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Support Admin Dashboard</h1>
+        <div class="card">
+            <textarea id="queryInput" placeholder="Enter customer issue..."></textarea>
+            <select id="escalationLevel">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button onclick="submitQuery()">Submit</button>
+        </div>
+
+        <h2>Support Log</h2>
+        <div id="supportLog"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
